@@ -11,17 +11,35 @@ import imagemin from 'gulp-imagemin';
 import cache from 'gulp-cache';
 import sass from 'gulp-sass';
 import browserSync from'browser-sync';
+import gulpLoadPlugins from "gulp-load-plugins";
+
+const $ = gulpLoadPlugins({camelize: true});
 
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-       baseDir: "./"
+       baseDir: "./dist"
     }
   });
 });
 
 gulp.task('bs-reload', function () {
   browserSync.reload();
+});
+
+gulp.task('pug', () => {
+    return gulp.src('src/*.pug')
+        .pipe(plumber({
+            errorHandler: function (error) {
+                console.log(error.message);
+                this.emit('end');
+            }}))
+        .pipe($.pug({
+            pretty: true
+        }))
+        //.pipe($.prettify({indent_char: '    ', indent_size: 1}))
+        .pipe(gulp.dest('dist/'))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('images', function(){
@@ -62,5 +80,5 @@ gulp.task('scripts', function(){
 gulp.task('default', ['browser-sync'], function(){
   gulp.watch("src/styles/**/*.scss", ['styles']);
   gulp.watch("src/scripts/**/*.js", ['scripts']);
-  gulp.watch("*.html", ['bs-reload']);
+  gulp.watch("src/*.pug", ['pug']);
 });

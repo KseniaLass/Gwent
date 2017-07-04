@@ -50,3 +50,4 @@ node_modules/
 /.sass-cache
 /bower_components
 /yarn.lock
+/dist
