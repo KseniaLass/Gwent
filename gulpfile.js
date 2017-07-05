@@ -162,6 +162,7 @@ gulp.task('fonts', () => gulp
   .pipe(changed(`${path.build}/fonts`))
   // Save files
   .pipe(gulp.dest(`${path.build}/fonts`))
+  .pipe(bs.reload({stream: true}))
 );
 
 /**
@@ -176,6 +177,7 @@ gulp.task('images', () => gulp
   .pipe(changed(`${path.build}/images`))
   // Save files
   .pipe(gulp.dest(`${path.build}/images`))
+  .pipe(bs.reload({stream: true}))
 );
 
 /**
@@ -190,6 +192,7 @@ gulp.task('media', () => gulp
   .pipe(changed(`${path.build}/media`))
   // Save files
   .pipe(gulp.dest(`${path.build}/media`))
+  .pipe(bs.reload({stream: true}))
 );
 
 /**
@@ -209,6 +212,7 @@ gulp.task('misc', () => gulp
   .pipe(changed(path.build))
   // Save files
   .pipe(gulp.dest(path.build))
+  .pipe(bs.reload({stream: true}))
 );
 
 /**
@@ -233,6 +237,7 @@ gulp.task('scripts', ['scripts-lint'], () => gulp
   }))
   // Save minified file
   .pipe(gulp.dest(`${path.build}/scripts`))
+  .pipe(bs.reload({stream: true}))
 );
 
 /**
@@ -275,6 +280,7 @@ gulp.task('styles', () => gulp
   }))
   // Save minified file
   .pipe(gulp.dest(`${path.build}/styles`))
+  .pipe(bs.reload({stream: true}))
 );
 
 /**
@@ -294,6 +300,7 @@ gulp.task('vendors', () => gulp
   }))
   // Save files
   .pipe(gulp.dest(`${path.build}/vendors`))
+  .pipe(bs.reload({stream: true}))
 );
 
 
@@ -319,4 +326,5 @@ gulp.task('views', () => gulp
   }))
   // Save files
   .pipe(gulp.dest(path.build))
+  .pipe(bs.reload({stream: true}))
 );
