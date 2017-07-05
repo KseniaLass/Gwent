@@ -122,5 +122,5 @@ bower_components
 .bower-registry
 .bower-tmp
 
-# IDE
+# IDE Php storm
 .idea
