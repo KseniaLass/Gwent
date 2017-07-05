@@ -1,0 +1,10 @@
+extends /extends/layout
+include /mixins/sample
+
+block variables
+  - var title = "Web Starter Kit ";
+  - var description = "Web Starter Kit";
+
+block content
+  h1 Web Starter Kit
+  +sample("I'm a sample mixin with class modifier!")(class="c-sample--modifier")
