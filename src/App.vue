@@ -4,9 +4,8 @@
       <img class="header__img" src="./assets/img/header.png" alt="WildKegs">
     </header>
     <div class="container">
-
+      <router-view/>
     </div>
-    <router-view/>
   </div>
 </template>
 
@@ -38,6 +37,7 @@ export default {
   border: 5px solid;
   border-image: url('assets/img/border-vert.png') 30 round round;
   position: relative;
+  padding:35px 45px;
   &:before {
     content: '';
     background: url('assets/img/border-up.png');

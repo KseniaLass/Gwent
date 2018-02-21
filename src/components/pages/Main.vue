@@ -1,6 +1,10 @@
 <template>
-    <h1>Main Page</h1>
+    <app-filter></app-filter>
 </template>
 <script>
-export default {}
+
+import AppFilter from '../blocks/AppFilter.vue'
+export default {
+    components: {AppFilter}
+}
 </script>
