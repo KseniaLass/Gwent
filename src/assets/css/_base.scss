@@ -9,7 +9,12 @@ body {
 	min-width:$width_content;
 }
 
-
 * {
     box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
