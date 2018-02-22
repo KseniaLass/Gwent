@@ -44,6 +44,24 @@
                 .row__item(v-for='line in params[0].line')
                     .row__text {{line}}
 
+            .filter__row.row.row-fullwidth
+                .row__title Включая токены:
+                .row__checkbox.checkbox
+                    input.checkbox__input#token(type="checkbox" value="value1")
+                    label.checkbox__label(for="token")
+
+        .filter__footer.clearfix
+            .filter__submit
+                a(href="#").filter__btn.btn.btn-super Найти
+                a(href="#").filter__clear Сбросить фильтры
+
+            .filter__pagination.pagination
+                a(href="#").pagination__btn.btn.btn-transparent 1
+                a(href="#").pagination__btn.btn.btn-transparent 2
+                a(href="#").pagination__btn.btn.btn-transparent 3
+                a(href="#").pagination__btn.btn.btn-transparent Дальше
+
+
 </template>
 <script>
 export default {
@@ -80,8 +98,36 @@ export default {
             margin: 18px 40px 18px;
             float: left;
         }
+        &__footer {
+            padding:0 41px;
+            margin: 21px 0;
+        }
+        &__submit {
+            display: inline-block;
+            float: left;
+        }
+        &__btn {
+            margin-right: 17px;
+            padding: 0 48px;
+            height: 45px;
+            line-height: 45px;
+        }
+        &__clear {
+            display: inline-block;
+            color: $pumpkin;
+            font-size: 14px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &__pagination {
+            float: right;
+        }
     }
     .row {
+        &-fullwidth {
+            width:100%;
+        }
         &__title {
             font-size: 18px;
             color: #464646;
@@ -89,9 +135,6 @@ export default {
             display: inline-block;
             margin-right: 4px;
             vertical-align: middle;
-        }
-        &__list {
-
         }
         &__item {
             border: 3px solid $green;
@@ -181,6 +224,117 @@ export default {
             position: absolute;
             left: 48px;
             top: 15px;
+        }
+    }
+    .checkbox {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 5px;
+        &__input {
+            position: absolute;
+            opacity: 0;
+            & + label {
+                position: relative;
+                cursor: pointer;
+                padding: 0;
+            }
+            & + label:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border: 3px solid $green;
+                transition: .2s ease-out;
+            }
+            &:hover + label:before {
+                //background: $green;
+            }
+            &:focus + label:before {
+                box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+            }
+            &:checked + label:before {
+            }
+            &:disabled + label {
+                color: #b8b8b8;
+                cursor: auto;
+            }
+            &:disabled + label:before {
+                box-shadow: none;
+                background: #ddd;
+            }
+            &:checked + label:after {
+                content: '';
+                position: absolute;
+                left: 5px;
+                top: -12px;
+                width:45px;
+                height:45px;
+                background: url('../../assets/img/icon-check.png');
+                background-size: cover;
+
+            }
+        }
+    }
+    .btn {
+        text-align: center;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 16px;
+        text-decoration: none;
+        transition: .2s ease-out;
+        font-weight:500;
+        &-super {
+            color: #ffffff;
+            background-image: linear-gradient($yellow, $pumpkin);
+            box-shadow: 0 0 9px 0 rgba(226,127,1,0.5);
+            &:hover {
+                box-shadow: none;
+                background-image: linear-gradient( $pumpkin 100%, $yellow);
+            }
+        }
+        &-transparent {
+            border-width: 3px;
+            border-style: solid;
+            border-image: linear-gradient($yellow, $pumpkin) 1 100%;
+            position: relative;
+            color: $pumpkin;
+            box-shadow:  inset 0 0 9px 0 rgba(226,127,1,0.5), 0 0 9px 0 rgba(226,127,1,0.5);
+            &:before {
+                content: '';
+                top:-3px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height:3px;
+                background: $yellow;
+            }
+            &:after {
+                content: '';
+                bottom:-3px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height:3px;
+                background: $pumpkin;
+            }
+            &:hover {
+                box-shadow: none;
+                border: 3px solid $pumpkin;
+                &:before {
+                    background: $pumpkin;
+                }
+            }
+        }
+    }
+    .pagination {
+        &__btn {
+            min-width:38px;
+            height: 38px;
+            line-height: 34px;
+            margin-right: 3px;
+            padding:0 10px;
         }
     }
 </style>
