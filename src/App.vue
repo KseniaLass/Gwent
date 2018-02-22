@@ -24,7 +24,6 @@ export default {
 }
 .header {
     font-size: 0;
-    height: 327px;
     &__img {
         max-width:100%;
     }

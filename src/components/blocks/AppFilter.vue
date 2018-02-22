@@ -61,6 +61,8 @@
                 a(href="#").pagination__btn.btn.btn-transparent 3
                 a(href="#").pagination__btn.btn.btn-transparent Дальше
 
+        .filter__border
+
 
 </template>
 <script>
@@ -122,6 +124,13 @@ export default {
         }
         &__pagination {
             float: right;
+        }
+        &__border {
+            background: url('../../assets/img/border-conent.png') no-repeat;
+            width:100%;
+            height:20px;
+            background-position: 50% 50%;
+            padding: 40px 0;
         }
     }
     .row {
