@@ -97,7 +97,7 @@ export default {
             margin:4px 0 0;
         }
         &__row {
-            margin: 18px 40px 18px;
+            padding: 18px 40px 18px;
             float: left;
         }
         &__footer {

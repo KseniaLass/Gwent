@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b93e297-a2f5-492a-b602-54c7eb420748" name="Default" comment="add filter layout">
+    <list default="true" id="2b93e297-a2f5-492a-b602-54c7eb420748" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/_base.scss" afterPath="$PROJECT_DIR$/src/assets/css/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/_variables.scss" afterPath="$PROJECT_DIR$/src/assets/css/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/style.scss" afterPath="$PROJECT_DIR$/src/assets/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/blocks/AppFilter.vue" afterPath="$PROJECT_DIR$/src/components/blocks/AppFilter.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +20,8 @@
       <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            <state relative-caret-position="425">
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -55,12 +52,11 @@
       <file leaf-file-name="AppFilter.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/blocks/AppFilter.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="289" column="65" lean-forward="true" selection-start-line="289" selection-start-column="65" selection-end-line="289" selection-end-column="65" />
+            <state relative-caret-position="358">
+              <caret line="105" column="9" lean-forward="true" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
               <folding>
-                <element signature="e#3536#5941#0" expanded="false" />
-                <element signature="e#5954#6587#0" expanded="false" />
-                <element signature="e#6602#8076#0" expanded="false" />
+                <element signature="e#6207#6840#0" expanded="false" />
+                <element signature="e#6855#8329#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -164,12 +160,12 @@
         <option value="$PROJECT_DIR$/src/components/pages/Main.vue" />
         <option value="$PROJECT_DIR$/src/assets/img/icon-table.svg" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/assets/css/_base.scss" />
         <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/src/assets/css/components/checkbox.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/_variables.scss" />
+        <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/src/components/blocks/AppFilter.vue" />
       </list>
     </option>
@@ -417,7 +413,7 @@
       <workItem from="1519199037184" duration="2146000" />
       <workItem from="1519216134590" duration="10594000" />
       <workItem from="1519286148544" duration="54000" />
-      <workItem from="1519291026630" duration="10689000" />
+      <workItem from="1519291026630" duration="12928000" />
     </task>
     <task id="LOCAL-00001" summary="add header and container">
       <created>1519142935398</created>
@@ -440,11 +436,25 @@
       <option name="project" value="LOCAL" />
       <updated>1519228272086</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add bottom of filter">
+      <created>1519307406084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1519307406084</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add bottom border to filter">
+      <created>1519309848422</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1519309848422</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29912000" />
+    <option name="totallyTimeSpent" value="32151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -482,7 +492,9 @@
     <MESSAGE value="add header and container" />
     <MESSAGE value="add filter" />
     <MESSAGE value="add filter layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="add filter layout" />
+    <MESSAGE value="add bottom of filter" />
+    <MESSAGE value="add bottom border to filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="add bottom border to filter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,14 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -775,14 +779,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/blocks/AppFilter.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="289" column="65" lean-forward="true" selection-start-line="289" selection-start-column="65" selection-end-line="289" selection-end-column="65" />
+        <state relative-caret-position="358">
+          <caret line="105" column="9" lean-forward="true" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
           <folding>
-            <element signature="e#3536#5941#0" expanded="false" />
-            <element signature="e#5954#6587#0" expanded="false" />
-            <element signature="e#6602#8076#0" expanded="false" />
+            <element signature="e#6207#6840#0" expanded="false" />
+            <element signature="e#6855#8329#0" expanded="false" />
           </folding>
         </state>
       </provider>
