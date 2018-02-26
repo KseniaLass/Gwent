@@ -62,8 +62,6 @@
                 a(href="#").pagination__btn.btn.btn-transparent Дальше
 
         .filter__border
-
-
 </template>
 <script>
 export default {
@@ -231,8 +229,8 @@ export default {
             color: $green;
             font-size: 18px;
             position: absolute;
-            left: 48px;
-            top: 15px;
+            left: 87px;
+            top: 32px;
         }
     }
     .checkbox {
