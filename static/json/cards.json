@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Adrenaline Rush",
+    "type": "bronze",
+    "fraction": "neutral",
+    "rarity": "normal",
+    "line": "melee",
+    "img": "1.png"
+  },
+  {
+    "id": 2,
+    "name": "Zoltan: Scoundrel",
+    "type": "gold",
+    "fraction": "neutral",
+    "rarity": "legendary",
+    "line": "melee",
+    "img": "2.png"
+  },
+  {
+    "id": 3,
+    "name": "Éibhear Hattori",
+    "type": "silver",
+    "fraction": "scoiatael",
+    "rarity": "normal",
+    "line": "special",
+    "img": "3.png"
+  },
+  {
+    "id": 4,
+    "name": "Ge'els",
+    "type": "gold",
+    "fraction": "monsters",
+    "rarity": "normal",
+    "line": "special",
+    "img": "4.png"
+  },
+  {
+    "id": 5,
+    "name": "Stribog Runestone",
+    "type": "silver",
+    "fraction": "skellige",
+    "rarity": "normal",
+    "line": "special",
+    "img": "5.png"
+  },
+  {
+    "id": 6,
+    "name": "Leo Bonhart",
+    "type": "gold",
+    "fraction": "nilfgaard",
+    "rarity": "normal",
+    "line": "special",
+    "img": "6.png"
+  }
+]

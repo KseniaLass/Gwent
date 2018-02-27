@@ -1,15 +1,16 @@
 <template lang='pug'>
-    h2  Table
+    .table
+        .table__content Table
 </template>
 <script>
-export default {
-  props: ['cards'],
-  data () {
-    return {
+  export default {
+    props: ['cards'],
+    data () {
+      return {
 
+      }
     }
   }
-}
 </script>
 
 <style lang='scss' scoped>

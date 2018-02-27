@@ -9,13 +9,22 @@
             .filter__row.row
                 .row__title Вид:
 
-                a(href="#" v-on:click.prevent="$emit('changeState', 'table')").row__item.row__item-table.is-active
+                a(  href="#"
+                    v-bind:class="state === 'table' ? 'is-active' : '' "
+                    v-on:click.prevent="$emit('changeState', 'table')"
+                ).row__item.row__item-table
                     .row__text Таблицей
 
-                a(href="#" v-on:click.prevent="$emit('changeState', 'preview')").row__item.row__item-preview
+                a(  href="#"
+                    v-bind:class="state === 'preview' ? 'is-active' : '' "
+                    v-on:click.prevent="$emit('changeState', 'preview')"
+                ).row__item.row__item-preview
                     .row__text Превью
 
-                a(href="#" v-on:click.prevent="$emit('changeState', 'detail')").row__item.row__item-detail
+                a(  href="#"
+                    v-bind:class="state === 'detail' ? 'is-active' : '' "
+                    v-on:click.prevent="$emit('changeState', 'detail')"
+                ).row__item.row__item-detail
                     .row__text Детальный просмотр
 
         .filter__body.clearfix
@@ -65,6 +74,7 @@
 </template>
 <script>
 export default {
+  props: ['state'],
   data () {
     return {
       params: [

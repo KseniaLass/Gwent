@@ -18,16 +18,14 @@ export default {
 <style lang='scss' scoped>
     .preview {
         &__content {
-            padding: 26px 55px;
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            //justify-content: space-around;
 
         }
         &__card {
             display: inline-block;
-            width: 278px;
-            height: 366px;
+            width: 200px;
             &:hover {
                 .preview__img {
                     transform: scale(1.1);
@@ -35,9 +33,7 @@ export default {
             }
         }
         &__img {
-            width: 278px;
-            height: 366px;
-            max-width:100%;
+            width: 100%;
             transition: .2s ease-out;
         }
     }

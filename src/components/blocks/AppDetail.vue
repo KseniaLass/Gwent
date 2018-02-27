@@ -1,15 +1,16 @@
 <template lang='pug'>
-    h2  detail
+    .detail
+        .detail__content Detail
 </template>
 <script>
-export default {
-  props: ['cards'],
-  data () {
-    return {
+  export default {
+    props: ['cards'],
+    data () {
+      return {
 
+      }
     }
   }
-}
 </script>
 
 <style lang='scss' scoped>
