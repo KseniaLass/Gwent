@@ -28,11 +28,17 @@ export default {
             display: inline-block;
             width: 278px;
             height: 366px;
+            &:hover {
+                .preview__img {
+                    transform: scale(1.1);
+                }
+            }
         }
         &__img {
             width: 278px;
             height: 366px;
             max-width:100%;
+            transition: .2s ease-out;
         }
     }
 </style>

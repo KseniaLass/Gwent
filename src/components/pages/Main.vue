@@ -1,8 +1,10 @@
 <template>
     <div class="content">
-        <app-filter></app-filter>
+        <app-filter @changeState="changeState"></app-filter>
         <div class="catalog">
-            <app-preview :cards="cards"></app-preview>
+            <app-preview v-if="state === 'preview'" :cards="cards"></app-preview>
+            <app-detail v-if="state === 'detail'" :cards="cards"></app-detail>
+            <app-table v-if="state === 'table'" :cards="cards"></app-table>
         </div>
     </div>
 </template>
@@ -11,8 +13,10 @@
 
 import AppFilter from '../blocks/AppFilter.vue'
 import AppPreview from '../blocks/AppPreview.vue'
+import AppDetail from '../blocks/AppDetail.vue'
+import AppTable from '../blocks/AppTable.vue'
 export default {
-  components: {AppFilter, AppPreview},
+  components: {AppFilter, AppPreview, AppDetail, AppTable},
   data () {
     return {
       cards: [
@@ -52,7 +56,13 @@ export default {
           line: 'special',
           img: 'elf.png'
         }
-      ]
+      ],
+      state: 'detail'
+    }
+  },
+  methods: {
+    changeState (type) {
+      this.state = type
     }
   }
 }

@@ -9,13 +9,13 @@
             .filter__row.row
                 .row__title Вид:
 
-                .row__item.row__item-table.is-active
+                a(href="#" v-on:click.prevent="$emit('changeState', 'table')").row__item.row__item-table.is-active
                     .row__text Таблицей
 
-                .row__item.row__item-preview
+                a(href="#" v-on:click.prevent="$emit('changeState', 'preview')").row__item.row__item-preview
                     .row__text Превью
 
-                .row__item.row__item-detail
+                a(href="#" v-on:click.prevent="$emit('changeState', 'detail')").row__item.row__item-detail
                     .row__text Детальный просмотр
 
         .filter__body.clearfix
