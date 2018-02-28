@@ -20,7 +20,7 @@ export default {
         &__content {
             display: flex;
             flex-flow: row wrap;
-            //justify-content: space-around;
+            justify-content: space-between;
 
         }
         &__card {

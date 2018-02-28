@@ -52,5 +52,14 @@
     "rarity": "normal",
     "line": "special",
     "img": "6.png"
+  },
+  {
+    "id": 7,
+    "name": "Geralt: Yrden",
+    "type": "gold",
+    "fraction": "neutral",
+    "rarity": "normal",
+    "line": "special",
+    "img": "7.png"
   }
 ]

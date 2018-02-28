@@ -10,8 +10,8 @@
                 .row__title Вид:
 
                 a(  href="#"
-                    v-bind:class="state === 'table' ? 'is-active' : '' "
-                    v-on:click.prevent="$emit('changeState', 'table')"
+                    v-bind:class="state === 'row' ? 'is-active' : '' "
+                    v-on:click.prevent="$emit('changeState', 'row')"
                 ).row__item.row__item-table
                     .row__text Таблицей
 
