@@ -21,7 +21,7 @@ export default {
         &__content {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
 
         }
         &__card {
