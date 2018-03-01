@@ -1,6 +1,6 @@
 <template>
     <div class="content">
-        <app-filter @changeState="changeState" :state="state"></app-filter>
+        <app-filter @changeState="changeState" @filterItem="filterItem" :state="state"></app-filter>
         <div class="catalog">
             <transition name="fade">
 
@@ -33,6 +33,11 @@ export default {
   methods: {
     changeState (type) {
       this.state = type
+    },
+    filterItem (key, value) {
+      this.cards = this.cards.filter(card => {
+        return card[key].toLowerCase() === value.toLowerCase()
+      })
     }
   }
 }

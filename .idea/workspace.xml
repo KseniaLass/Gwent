@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2b93e297-a2f5-492a-b602-54c7eb420748" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/_base.scss" afterPath="$PROJECT_DIR$/src/assets/css/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/_variables.scss" afterPath="$PROJECT_DIR$/src/assets/css/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/blocks/AppDetail.vue" afterPath="$PROJECT_DIR$/src/components/blocks/AppDetail.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/blocks/AppFilter.vue" afterPath="$PROJECT_DIR$/src/components/blocks/AppFilter.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/blocks/AppPreview.vue" afterPath="$PROJECT_DIR$/src/components/blocks/AppPreview.vue" />
@@ -23,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/pages/Main.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="357">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -36,10 +34,10 @@
       <file leaf-file-name="AppFilter.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/blocks/AppFilter.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="296" column="0" lean-forward="false" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+            <state relative-caret-position="578">
+              <caret line="52" column="136" lean-forward="false" selection-start-line="52" selection-start-column="136" selection-end-line="52" selection-end-column="136" />
               <folding>
-                <element signature="e#7387#8861#0" expanded="false" />
+                <element signature="e#8360#9834#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -49,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/blocks/AppPreview.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="21" />
+              <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -58,18 +56,18 @@
       <file leaf-file-name="AppRow.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/blocks/AppRow.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="102">
+              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDetail.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppDetail.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/blocks/AppDetail.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="617">
+              <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -172,13 +170,13 @@
         <option value="$PROJECT_DIR$/src/App.vue" />
         <option value="$PROJECT_DIR$/static/json/cards.json" />
         <option value="$PROJECT_DIR$/src/components/blocks/AppTable.vue" />
-        <option value="$PROJECT_DIR$/src/components/blocks/AppFilter.vue" />
-        <option value="$PROJECT_DIR$/src/components/pages/Main.vue" />
         <option value="$PROJECT_DIR$/src/assets/css/_variables.scss" />
         <option value="$PROJECT_DIR$/src/assets/css/_base.scss" />
         <option value="$PROJECT_DIR$/src/components/blocks/AppRow.vue" />
         <option value="$PROJECT_DIR$/src/components/blocks/AppPreview.vue" />
         <option value="$PROJECT_DIR$/src/components/blocks/AppDetail.vue" />
+        <option value="$PROJECT_DIR$/src/components/blocks/AppFilter.vue" />
+        <option value="$PROJECT_DIR$/src/components/pages/Main.vue" />
       </list>
     </option>
   </component>
@@ -455,7 +453,7 @@
       <workItem from="1519737483103" duration="6324000" />
       <workItem from="1519803408712" duration="9610000" />
       <workItem from="1519888688430" duration="31000" />
-      <workItem from="1519905140745" duration="1519000" />
+      <workItem from="1519905140745" duration="4710000" />
     </task>
     <task id="LOCAL-00001" summary="add header and container">
       <created>1519142935398</created>
@@ -527,11 +525,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519830423691</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add detail page">
+      <created>1519906674109</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519906674109</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57694000" />
+    <option name="totallyTimeSpent" value="60885000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -576,7 +581,8 @@
     <MESSAGE value="add change tabs event" />
     <MESSAGE value="add json with cards" />
     <MESSAGE value="add table" />
-    <option name="LAST_COMMIT_MESSAGE" value="add table" />
+    <MESSAGE value="add detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add detail page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -822,44 +828,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/blocks/AppRow.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/blocks/AppPreview.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="21" />
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/blocks/AppFilter.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/blocks/AppRow.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="296" column="0" lean-forward="false" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
-          <folding>
-            <element signature="e#7387#8861#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pages/Main.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        <state relative-caret-position="102">
+          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/blocks/AppDetail.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="617">
+          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/blocks/AppFilter.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="52" column="136" lean-forward="false" selection-start-line="52" selection-start-column="136" selection-end-line="52" selection-end-column="136" />
+          <folding>
+            <element signature="e#8360#9834#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pages/Main.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>

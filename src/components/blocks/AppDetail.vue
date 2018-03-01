@@ -37,17 +37,13 @@ export default {
     .detail {
         padding: 0 41px;
         &__content {
-
-
             margin:0 -15px;
         }
         &__item {
             width:50%;
             float: left;
             display: flex;
-            //align-items: center;
-            margin-bottom: 100px;
-
+            margin-bottom: 70px;
         }
     }
     .card {

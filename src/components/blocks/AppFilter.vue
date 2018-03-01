@@ -32,26 +32,26 @@
             .filter__row.row
                 .row__title Тип:
 
-                .row__item(v-for='type in params[0].type')
-                    .row__text {{type}}
+                a(href="#" v-for='(value, key) in params[0].type' v-bind:value="key" v-on:click.prevent="$emit('filterItem', 'type', key)").row__item
+                    .row__text {{value}}
 
             .filter__row.row
                 .row__title Редкость:
 
-                .row__item(v-for='rarity in params[0].rarity')
-                    .row__text {{rarity}}
+                a(href="#" v-for='(value, key) in params[0].rarity' v-bind:value="key" v-on:click.prevent="$emit('filterItem', 'rarity', key)").row__item
+                    .row__text {{value}}
 
             .filter__row.row
                 .row__title Фракция:
 
-                .row__item(v-for='fraction in params[0].fraction')
-                    .row__text {{fraction}}
+                a(href="#" v-for='(value, key) in params[0].fraction' v-bind:value="key" v-on:click.prevent="$emit('filterItem', 'fraction', key)").row__item
+                    .row__text {{value}}
 
             .filter__row.row
                 .row__title Линия:
 
-                .row__item(v-for='line in params[0].line')
-                    .row__text {{line}}
+                a(href="#" v-for='(value, key) in params[0].line' v-bind:value="key" v-on:click.prevent="$emit('filterItem', 'line', key)").row__item
+                    .row__text {{value}}
 
             .filter__row.row.row-fullwidth
                 .row__title Включая токены:
@@ -61,7 +61,7 @@
 
         .filter__footer.clearfix
             .filter__submit
-                a(href="#").filter__btn.btn.btn-super Найти
+                //a(href="#").filter__btn.btn.btn-super Найти
                 a(href="#").filter__clear Сбросить фильтры
 
             .filter__pagination.pagination
@@ -79,10 +79,32 @@ export default {
     return {
       params: [
         {
-          type: ['Золото', 'Серебро', 'Бронза', 'Лидер'],
-          rarity: ['Обычная', 'Редкая', 'Эпическая', 'Легендарная'],
-          fraction: ['Нейтральные', 'Королевства Севера', 'Скоя`таэли', 'Чудовища', 'Скелиге', 'Нильфгард'],
-          line: ['Рукопашный', 'Дальний бой', 'Осадный', 'Особый']
+          type: {
+            'gold': 'Золотой',
+            'silver': 'Серебрянный',
+            'bronze': 'Бронзовый',
+            'leader': 'Лидер'
+          },
+          rarity: {
+            'Usual': 'Обычная',
+            'Rare': 'Редкая',
+            'Epic': 'Эпическая',
+            'Legendary': 'Легендарная'
+          },
+          fraction: {
+            'Neutral': 'Нейтральная',
+            'NorthernRealms': 'Королевства Севера',
+            'Scoiatael': 'Скоятаэли',
+            'Monsters': 'Монстры',
+            'Skellige': 'Скеллиге',
+            'Nilfgaard': 'Нильфгаард'
+          },
+          line: {
+            'Melee': 'Ближний бой',
+            'Ranged': 'Дальний бой',
+            'Siege': 'Осадный',
+            'Special': 'Особый'
+          }
         }
       ]
     }
@@ -92,24 +114,29 @@ export default {
 
 <style lang='scss' scoped>
     .filter {
+        padding:0 40px;
         &__title {
             font-size: 30px;
             color: $grey;
             font-weight:700;
-            padding:0 41px;
         }
         &__header {
-            margin:7px 0 0;
+            margin:7px -20px 0;
+            display: flex;
+            justify-content: space-around;
         }
         &__body {
-            margin:4px 0 0;
+            margin:4px -20px 0;
+            display: flex;
+            justify-content: flex-start;
+            flex-flow:row wrap;
+
         }
         &__row {
-            padding: 18px 40px 18px;
+            padding: 18px 20px;
             float: left;
         }
         &__footer {
-            padding:0 41px;
             margin: 21px 0;
         }
         &__submit {

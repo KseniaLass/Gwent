@@ -40,7 +40,7 @@ export default {
 
 <style lang='scss' scoped>
     .row {
-        padding: 0 55px;
+        padding: 0 41px;
         &__content {
 
         }
