@@ -17,6 +17,7 @@ export default {
 
 <style lang='scss' scoped>
     .preview {
+        padding: 0 55px;
         &__content {
             display: flex;
             flex-flow: row wrap;

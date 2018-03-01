@@ -26,8 +26,6 @@
                         td.table__body__td {{ card.strength }}
                         td.table__body__td {{ card.line }}
                         td.table__body__td {{ card.type }}
-
-
 </template>
 <script>
 export default {
@@ -42,6 +40,7 @@ export default {
 
 <style lang='scss' scoped>
     .row {
+        padding: 0 55px;
         &__content {
 
         }

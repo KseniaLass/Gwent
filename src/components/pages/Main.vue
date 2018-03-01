@@ -27,7 +27,7 @@ export default {
   data () {
     return {
       cards: collection,
-      state: 'row'
+      state: 'detail'
     }
   },
   methods: {
