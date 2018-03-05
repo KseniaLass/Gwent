@@ -2,7 +2,7 @@
     <div class="content">
         <app-filter @changeState="changeState" @filterItem="filterItem" :state="state"></app-filter>
         <div class="catalog">
-            <transition name="fade">
+            <transition name="flip" mode="out-in">
 
                 <app-preview v-if="state === 'preview'" :cards="cards"></app-preview>
                 <app-detail v-if="state === 'detail'" :cards="cards"></app-detail>
