@@ -35,7 +35,7 @@ export default {
       this.state = type
     },
     filterItem (key, value) {
-      this.cards = collection.filter(card => {
+      this.cards[0] = collection.filter(card => {
         return card[key].toLowerCase() === value.toLowerCase()
       })
     }

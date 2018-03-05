@@ -5,14 +5,9 @@
 
 <script>
 
-  import AppCard from '../blocks/AppCard.vue'
+import AppCard from '../blocks/AppCard.vue'
 
-  export default {
-    components: {AppCard},
-    data () {
-      return {
-
-      }
-    }
-  }
+export default {
+  components: {AppCard}
+}
 </script>

@@ -38,6 +38,8 @@ export default {
         padding: 0 41px;
         &__content {
             margin:0 -15px;
+            display: flex;
+            flex-flow: row wrap;
         }
         &__item {
             width:50%;
@@ -49,11 +51,17 @@ export default {
     .card {
         &__head {
             margin-right: 40px;
+            flex-basis: 35%;
+            max-width:217px;
+            img{
+                max-width:100%;
+            }
         }
         &__body {
             padding: 20px 0;
             display: flex;
             flex-flow: row wrap;
+            flex-basis: 65%;
         }
         &__title {
             font-size: 36px;

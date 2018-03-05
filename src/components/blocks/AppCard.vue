@@ -1,6 +1,6 @@
 <template lang="pug">
     .card
-        h1.card__title Adrenaline Rush
+        h1.card__title Adrenaline Rush {{ getCardByID }}
         .card__body
             .card__image
                 img(src="static/cards/1.png")
@@ -32,14 +32,20 @@
 </template>
 
 <script>
-  export default {
-    props: ['cards'],
-    data () {
-      return {
-
-      }
+export default {
+  props: ['cards'],
+  data () {
+    return {
+      // cardID: $route
+    }
+  },
+  computed: {
+    getCardByID () {
+      let id = this.$route.params.id
+      return this.cards
     }
   }
+}
 </script>
 
 <style lang='scss' scoped>
